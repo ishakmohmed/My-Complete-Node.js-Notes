@@ -1,0 +1,9 @@
+404, resource not found.
+400, bad request (input validation).
+500, internal server error.
+401, UNAUTHORIZED: client doesn't have AUTHORIZED credentials to access protected resource (USER DOESNT SEND VALID JWT).
+403, FORBIDDEN (USER SENDS VALID JWT).
+200, OK or success or something like that.
+
+Learned in React >
+201, Resource was created.

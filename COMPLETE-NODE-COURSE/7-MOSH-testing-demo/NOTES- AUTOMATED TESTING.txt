@@ -1,0 +1,62 @@
+benefits of automated testing > 
+- test your code frequently, in less time
+- catch bugs before deploying
+- deploy with confidence
+- refactor with confidence
+- focus more on the quality
+
+-------------------------------------
+
+types of automated tests (LEAST CONFIDENCE TO GREATEST CONFIDENCE  &&  FASTEST TO SLOWEST) >
+
+- unit- tests a unit (a class or multiple classes) of an application
+ WITHOUT its EXTERNAL dependencies (like files, db, message queues, web services, etc).
+
+- integration- tests the application WITH its EXTERNAL dependencies (like files, db, etc). It tests a class or 
+multiple classes. 
+
+- end-to-end- drives an application through its UI. One popular tool is 
+Selenium- allows us to record interaction of user with app and then play it
+ back and check if the application is returning the right result or not. THIS TYPE OF TEST IS VERY BRITTLE, 
+in which small enhancement to application or small change to user interface can easily break this test.
+
+---------------------------------------
+
+TEST PYRAMID >>>
+
+
+	        | end-to-end |
+      |       Integration        |
+|                 Unit                  |
+ 
+---------------------------------------
+
+TAKEAWAYS >>>
+
+- favour unit tests to end-to-end tests
+- cover unit test gaps with integration tests
+- use end-to-end tests sparingly
+
+---------------------------------------
+
+General guideline to make unit test >
+
+make the number of unit tests at least the same as the number of execution path!
+
+----------------------------------------
+
+- REMEMBER: tests are first-class citizens in your source code!
+
+----------------------------------------
+
+- REMEMBER: when testing strings, make sure your tests are not too specific!
+
+----------------------------------------
+
+- idk if this is related to testing or not, but in Node, say when you load a module (which will be loaded and cached in memory) in 10 different places in application, there is gonna be only 1 instance of that module in memory!
+
+----------------------------------------
+
+SUPER IMPORTANT NOTE: when we run out test using jest, jest configures NODE_ENV to test, so in FOLDER 6 MOSH NODEJS VIDLY, under config folder, add a new configuration file named test.json and then write some codes (check this file in folder 6 to see what code I wrote), but pretty much you wanna set a jwtPrivateKey like 1234 in that file itself, so you don't have to set environment variable on machine where we wanna run our test!
+
+

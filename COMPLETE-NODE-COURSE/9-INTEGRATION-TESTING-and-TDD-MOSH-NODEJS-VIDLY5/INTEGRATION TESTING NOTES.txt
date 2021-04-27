@@ -1,0 +1,15 @@
+how to prepare app for integration testing?
+
+1- npm i jest --save-dev
+
+2- in package.json, delete whatever in test in dev dependencies, and change to this >>>
+  "scripts": {
+    "test": "jest --watchAll --verbose --maxWorkers=1 --coverage"   // verbose will give you extra info! I DISCOVERED THAT i needa add --maxWorkers=1 so that multiple integration test don't fail cause server already is use. JUST ADD --maxWorkers=1 everytime trust me i experimented with this very well.  *** MOSH ALSO ADDED --coverage to see test coverage;
+  },
+
+3- just change configuration files in config folder, add a new key named "db" in default.json AND REPLACE HARD CODED DB CONNECTION STRING by loading the config module and dynamically accessing the DB CONNECTION STRING, and in test.json in config folder, change the connection string to a new database so instead of /vidly, change to /vidly_tests
+
+4- then install a library called supertest which allows us to test API endpoints just like POSTMAN   >>>   npm i supertest --save-dev
+
+5- then in index.js, get value and export the server from app.listen-listening on port 3000   (AND THEN IN TEST FILE YOU WILL LOAD THIS SERVER);
+

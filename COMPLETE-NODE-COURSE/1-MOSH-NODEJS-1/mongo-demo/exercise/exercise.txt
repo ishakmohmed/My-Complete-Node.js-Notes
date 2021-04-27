@@ -1,0 +1,5 @@
+write this command to create a database in mongodb, doesnt work in my machine, but i guess it'll work if you try it on other machines >>>
+
+mongoimport --db mongo-exercises --collection courses --drop --file exercise-data.json --jsonArray
+
+// ^ note: mosh included this code in donwloadable file, but he didn't write --drop on the on screen walkthrough;

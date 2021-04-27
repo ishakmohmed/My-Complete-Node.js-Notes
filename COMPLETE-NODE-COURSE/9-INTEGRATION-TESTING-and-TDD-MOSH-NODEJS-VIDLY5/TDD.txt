@@ -1,0 +1,13 @@
+Test Driven Development >
+
+1- write a failing Test
+2- write the simplest code to make the test pass
+3- refactor if necessary
+
+
+
+Benefits of TDD >
+
+1- testable source code
+2- full coverage by tests
+3- simpler implementation

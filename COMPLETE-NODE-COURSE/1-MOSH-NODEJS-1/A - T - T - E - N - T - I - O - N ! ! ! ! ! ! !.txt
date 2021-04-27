@@ -1,0 +1,4 @@
+MOSH NODEJS 1 ENDS IN SECTION CALLED "Mongo - Data Validation" 
+video number 6- SchemaType Options!
+
+MOSH NODEJS 2 starts with video 7- Project- Add Persistence to Genres API

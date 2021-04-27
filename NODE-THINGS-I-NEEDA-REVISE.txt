@@ -1,0 +1,5 @@
+in mosh node js 2 > mongoose-modling-relationship (the entire folder)
+
+unit and integration test in nodejs using jest.
+
+other kinda trivial? stuffs.

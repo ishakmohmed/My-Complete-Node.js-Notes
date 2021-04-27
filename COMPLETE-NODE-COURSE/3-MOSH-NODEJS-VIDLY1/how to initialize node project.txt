@@ -1,0 +1,13 @@
+ok, so how to initiale a node project?
+
+I figured this out on my own, now I am a complete pro when it comes to initializing a node project, if you forget how to initialize node project in future, youre gonna wanna see this text file!
+
+1- create a folder like MOSH-NODEJS-2, make sure there are no spaces between words...
+
+2- npm init --yes in that folder
+
+3- download mongoose, joi, express, and other packages you need in this main folder which ARE NEEDED BY FILES IN THIS MAIN FOLDER AND ALSO FILES IN ALL SUBFOLDERS
+
+4- write codes, remember that you usually wanna place your APIs such as genres API in a separate folder called routes!
+
+5- MOSH will teach you further on how to restructure your project, so keep an eye on next files, folders, and projects!

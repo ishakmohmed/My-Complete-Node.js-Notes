@@ -1,0 +1,9 @@
+4.13.6   <<< means Major.Minor.Patch
+^4.13.6     <<< or 4.x 
+~1.8.3      <<< 1.8.x
+
+// note: so caret means interested in 4 only, tilde means 1.8.whatever (1 and 8)
+
+// or, just remove caret/tilde to ensure someone else can view things exactly like the dev wanted to during production; 
+
+// "someone" can download all the dependencies using > npm install

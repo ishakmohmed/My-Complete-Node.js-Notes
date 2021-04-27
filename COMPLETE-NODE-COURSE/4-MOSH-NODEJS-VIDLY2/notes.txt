@@ -1,0 +1,17 @@
+Authentication 
+Authorization
+
+------------------
+
+Register: POST /api/users
+Login (login request/command): POST /api/users 
+
+------------------
+
+Information Expert Principle > 
+if an object that has enough information, and is an expert at a given area, 
+that object should be responsible for making decisions and performing tasks (like cooking
+is done by chef, not waiter).
+
+IN THIS CASE, THE USER OBJECT IS RESPONSIBLE FOR GENERATING THE JWT TOKEN, 
+no matter when registering a new user, or logging in a new user!

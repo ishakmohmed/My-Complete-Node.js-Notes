@@ -1,0 +1,9 @@
+WRITE THIS COMMAND IN THE SAME FOLDER THE exercise-data.json is in to import this json file to a new database >>>
+
+mongoimport --db mongo-exercises --collection courses --drop --file exercise-data.json --jsonArray
+
+// ********************************************************
+
+mongoimport --db mongo-exercises --collection courses --drop --file C:\Users\ishak\Desktop\MOSH NODEJS\mongo-demo\exercise\exercise-data.json --jsonArray
+
+C:\Users\ishak\Desktop\MOSH NODEJS\mongo-demo\exercise\exercise-data.json
