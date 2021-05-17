@@ -1,0 +1,10 @@
+in this 10th, final folder of vidly application,
+i added some codes to deploy app such as changing codes in config folder,
+require('helmet') and require compression, and app.use()ing them, and 
+a couple of other changes, so you dont need to add any codes more to deploy
+this app.
+
+PROBLEM: deployed to heroku but as for the db itself, mlab add on in heroku
+was terminated so i needed to use mongodb cloud but it didnt work out,
+so next time when you're creating a real project, you need to see the 
+deployment section again! 
